@@ -1,2 +1,37 @@
 <h1>Images#new</h1>
 <p>Find me in app/views/images/new.html.erb</p>
+
+
+<h1>Upload Image</h1>
+
+<div data-controller="picture">
+  <%= form_with(url: images_path, method: :post, local: true, html: { multipart: true, data: { action: "submit->picture#submitForm" } }) do |form| %>
+    <div class="field">
+      <%= form.label :image, 'Choose file' %>
+      <%= form.file_field :image, direct_upload: false, data: { action: "change->picture#previewPicture" } %>
+    </div>
+    <div id="preview" class="preview" data-picture-target="preview">
+      <canvas id="pictureCanvas"></canvas>
+    </div>
+    <div class="actions">
+      <%= form.submit 'Upload Image' %>
+    </div>
+  <% end %>
+</div>
+
+<style>
+.preview {
+  position: relative;
+  margin: 15px;
+  border: 2px solid #ddd;
+  padding: 10px;
+  /* width: 100%; */
+  height: 200px;
+}
+
+canvas {
+  position: absolute; 
+  height: 100%;
+}
+</style>
+
