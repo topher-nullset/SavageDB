@@ -1,6 +1,6 @@
-# <SavageDB>
+# SavageDB
 
-<Brief descri>
+A simple visual database I thought up while watching Adam Savage on the Tested youtube channel.
 
 ## Table of Contents
 
@@ -20,9 +20,9 @@ This section provides a quick start guide to get the development environment run
 ### Prerequisites
 
 Before you begin, ensure you have met the following requirements:
-- Ruby version (specify version, e.g., 2.7.1)
-- Rails version (specify version, e.g., 6.0.3)
-- System dependencies (e.g., PostgreSQL, Node.js for Webpacker)
+- Ruby version 3.2.2
+- Rails version 7.1.3.2
+- PostgreSQL, Node.js
 
 ### Setup
 
@@ -30,13 +30,13 @@ To set up the project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/<AppName>.git
+   git clone https://github.com/topher-nullset/SavageDB.git
    cd <AppName>
    ```
 2. Install dependencies:
    ```bash
    bundle install
-   yarn install
+   npm install
    ```
 3. Setup database:
    ```bash
@@ -45,7 +45,7 @@ To set up the project locally, follow these steps:
 
 ### Running the Application
 
-To run <AppName> locally, follow these steps:
+To run SavageDB locally, follow these steps:
 
 ```bash
 rails server
@@ -57,7 +57,7 @@ Visit `http://localhost:3000` in your browser to view the app.
 
 Explain how to run the automated tests for this system:
 ```bash
-rspec
+bundle exec rspec
 ```
 
 ## Contributing
@@ -78,7 +78,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_twitter) - email@example.com
+Chris C. - [@ChrisCullinane6](https://twitter.com/ChrisCullinane6) - chriscullinane@protonmail.com
 
 Project Link: [https://github.com/<your-username>/<AppName>](https://github.com/<your-username>/<AppName>)
 
