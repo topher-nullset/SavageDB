@@ -2,6 +2,44 @@
 
 A simple visual database I thought up while watching Adam Savage on the Tested youtube channel.
 
+The idea for this project started here. as much as I love a simple printed excel sheet list I think we can do better, and make the process of labeling easier and more helpful when searching for something in particular.
+
+[Adam Savage Builds His Dream Hardware Storage System!](https://youtu.be/PXfg4Qib-5I?si=dhoDJwQGBX5icFNP&t=2364)
+
+What if you could simply label a picture directly and store that in a database? Something like :
+```
+   {
+  "image": {
+    "id": 1,
+    "url": "https://example.com/path/to/image.jpg",
+    "title": "A Sample Image",
+    "description": "This is a sample description of the image."
+        }
+   }
+
+   {
+  "labels": [
+    {
+      "id": 1,
+      "image_id": 1,
+      "label_text": "Label 1",
+      "x_position": 50,
+      "y_position": 100,
+      "width": 120,
+      "height": 60
+    },
+    {
+      "id": 2,
+      "image_id": 1,
+      "label_text": "Label 2",
+      "x_position": 200,
+      "y_position": 150,
+      "width": 150,
+      "height": 75
+    }
+  ]
+}  
+```
 ## Table of Contents
 
 - [Getting Started](#getting-started)
